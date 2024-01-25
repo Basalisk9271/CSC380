@@ -1,0 +1,15 @@
+(a)	How is the Sudoku board being implemented in this class?
+It is being implemented as a 2D array called Grid that is 9 x 9 in size
+
+(b)	Why has protected been used rather than private?
+Protected is used to allow derived classes access, while members are private by default in C++ when 
+access modifiers are not specified.
+
+(c)	Look closely at the recursive function Recursive Solve. Name all base cases.
+if (Grid.size() == 0) - checks if the grid is empty, returning false.
+if (r == 9) - indicates the end of processing when r reaches 9.
+
+(d)	Describe how recursion is being used to solve the puzzle. It is pretty quick too! Will it be as fast for solving larger puzzles?
+Recursion in the Recursive_Solve function is used to systematically explore possible solutions. It iterates through each cell, trying different digits and recursively calling itself until a solution is found or all possibilities are exhausted. Since it is using an exhaustive search, it may get exponentially slower as we increase the size of the board. 
+(e)	Check out the URL tinyurl.com/SudokuAI. Scroll down to the paragraph entitled Psst, there’s already a 7 here!. How does it say a neural network implementation was used to solve the puzzle? How many datasets did it train on? Save your file. 
+The neural network treats the gameboard like a node and tries to evaluate each node while that node is connected to each of the other nodes in a row. Then, the AI is trained with messages saying which numbers are in the row so it knows which numbers it can and can't put. It was trained on 216000 puzzles. 
