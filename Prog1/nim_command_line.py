@@ -6,7 +6,7 @@ def print_piles(piles):
 
 def generate_variants(move):
     variants = set()
-    copy_move = moves
+    copy_move = move
 
     # Generate all variants
     for i in range(1, 4):
