@@ -1,0 +1,54 @@
+Name: Gabe Imlay
+Assignment: Lab 4
+Due: Feb 12 2024
+
+1. Prolog stands for "Programming Logic"
+2. 3 facts:
+    - father(john, peter).
+    - father(john,mary).
+    - mother(susan, peter).
+
+3. 
+    - parent(susan, mary): yes
+    - parent(ray, peter): no
+    - yeye(X, peter):   
+        X = david ? 
+        yes
+    - gunggung(X, Y): 
+        X = jack
+        Y = peter ? a
+        X = jack
+        Y = mary
+        no
+
+4. 
+    is_in_room(Class, wsc100): 
+        /*Class = csc480 ? 
+        yes */
+
+        Class = csc480 ? a
+        no
+    is_in_class(toby, Class):  
+        /*Class = csc380 ? 
+        yes */
+
+        Class = csc380 ? a
+        Class = csc480
+        yes
+    is_hot(Person):  
+        /*Person = toby ?
+        yes */
+
+        Person = toby ? 
+        yes
+
+    The is_hot rule doesnt need to use all of the variables because it searched for all of the things and relationships that make the rule true and returns them. 
+
+| ?- isbird(bird).
+
+yes
+| ?- isbird(bluebird).
+
+true ? 
+
+yes
