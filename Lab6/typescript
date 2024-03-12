@@ -1,0 +1,20 @@
+Script started on 2024-02-25 21:23:08-05:00 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="77" LINES="54"]
+]0;imlay_ga@DLinux:~/CSC380/Lab6[?2004h[imlay_ga@DLinux Lab6]$ git clone git@anvil.cs.mercer.edu:imlay_ga/csc380.git CSC380[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cssh-keygen -t   rsa -C "gabe.imlay9271@gmail.com" -b  [2P4096[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit clone git@anvil.cs.mercer.edu:imlay_ga/csc380.git CSC380[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cssh-keygen -t   rsa -C "gabe.imlay9271@gmail.com" -b  [2P4096[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit clone git@anvil.cs.mercer.edu:imlay_ga/csc380.git CSC380[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython3 cnn.py
+[?2004lFiles already downloaded and verified
+Files already downloaded and verified
+Enter the number of Epochs: 10
+Epoch 0: Accuracy: 34 %
+Epoch 1: Accuracy: 41 %
+Epoch 2: Accuracy: 44 %
+Epoch 3: Accuracy: 47 %
+Epoch 4: Accuracy: 49 %
+Epoch 5: Accuracy: 52 %
+Epoch 6: Accuracy: 53 %
+Epoch 7: Accuracy: 55 %
+Epoch 8: Accuracy: 56 %
+Epoch 9: Accuracy: 56 %
+]0;imlay_ga@DLinux:~/CSC380/Lab6[?2004h[imlay_ga@DLinux Lab6]$ exit
+[?2004lexit
+
+Script done on 2024-02-25 22:12:25-05:00 [COMMAND_EXIT_CODE="0"]
