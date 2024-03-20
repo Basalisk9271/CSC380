@@ -1,0 +1,60 @@
+Name: Gabe Imlay
+Assignment: Lab 7 - farmer.txt
+Due: Mar 20, 2024
+Sources: Chat-GPT and classmates referenced when debugging. 
+
+| ?- size([1,2,3,4],N).
+| ?- sumlist([1,2,3,4],N).
+| ?- reverse([1,2,3,4],N).
+
+A - Give your output to the three queries above.
+
+    | ?- size([1,2,3,4],N).
+
+    N = 4
+
+    yes
+    
+    | ?- sumlist([1,2,3,4],N).
+
+    N = 10
+
+    yes
+    
+    | ?- reverse([1,2,3,4],N).
+
+    N = [4,3,2,1]
+
+    (1 ms) yes
+
+B - Give your output, and then under each of the eight states in the Solution path describe the scenario that has unfolded.
+
+    1 - state(w,w,w,w) = Farmer, wolf, goat, cabbage all on west bank
+    2 - state(e,w,e,w) = Farmer takes the goat to the east bank and leavs wolf and cabbage 
+    3 - state(w,w,e,w) = Farmer returns alone to the west bank
+    4 - state(e,w,e,e) = Farmer takes the cabbage to the east bank, leaving wolf alone on the west bank
+    5 - state(w,w,w,e) = Farmer takes the goat back to the west bank
+    6 - state(e,e,w,e) = Farmer takes the wolf to the east bank, leaving goat alone on the west bank
+    7 - state(w,e,w,e) = Farmer returns to the west bank alone to get the goat
+    8 - state(e,e,e,e) = Farmer takes the goat to the east bank
+
+C - What is backtracking? According to the output, where is backtracking enabling recovery from mistakes?
+
+    Backtracking is taking an item from the west bank back to the east bank to prevent the consumption of one of the 
+    other items as a result of leaving two items unattended that were described in the problem. The backtracking 
+    occurs in the 5th and 6th steps, allowing for the farmer to prevent the goat from eating the cabbage when he's not 
+    looking. 
+
+D - A very similar problem is called the Jealous Husbands Problem. Look it up and briefly describe it.
+
+    Imagine three married couples and a small boat eager to cross a river. However, there's a catch – the boat can only 
+    carry two people at a time. To complicate matters, if ever on either side of the river there are more husbands than 
+    wives (excluding their own), jealousy flares up, and chaos ensues.
+
+    Your task is to figure out a way for all six individuals to cross the river without triggering the husbands' jealousy. 
+    It's like orchestrating a delicate dance, ensuring that each couple crosses safely while maintaining harmony and 
+    avoiding any emotional turbulence.
+
+    This problem isn't just about getting from point A to point B; it's about navigating complex human dynamics and finding 
+    a solution that keeps everyone content. It's a puzzle that tests your strategic thinking and empathy as you balance the needs 
+    and emotions of each character in this playful yet challenging scenario.
